@@ -1,0 +1,31 @@
+import java.util.*;
+class smalldigit
+{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int small = num%10;
+		int rem=0;
+		int small2=0;
+		num= num/10;
+		while(num!=0){
+			rem=num %10;
+			if(rem<small){
+				small2=small;
+				small=rem;
+				num=num/10;
+			}else if(small2>rem && small!=rem){
+				small = rem;
+				num=num/10;
+			}else if(rem>small && rem !=small){
+				small2=rem;
+				num= num/10;
+			}else{
+				System.out.println("error");
+				break;
+			
+			}
+			
+		}
+		System.out.println(small2);
+	}}
