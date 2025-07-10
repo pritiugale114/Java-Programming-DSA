@@ -1,0 +1,33 @@
+
+* Array
+
+ 
+******Drawbacks of Array*************
+1. Array is a collection of homogeneous elements 
+2. Array is fixed in size , once a block of memory is created then it  cannot be increase or decrease.
+3.it doesn't have any inbuilt method or functions to perform CRUD operation.
+
+ * Array reference variable :
+ - a variable which is used to store the address of an array object is known as array referance variable.
+
+
+*index :
+- index is a positive integer number which starts from 0, it indicates or points the specific position in an array
+
+
+
+* syntex to create array reference variable :
+
+- Datatype[] identifier;
+- ex. int[] arr;
+- arr[ ] <- address of array object 
+
+
+
+* syntax to create array object :
+ - *] using [new] keyword :
+
+ Syntax: new Datatype[Size];
+
+ -ex. new int[5];
+
