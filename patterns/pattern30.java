@@ -1,0 +1,24 @@
+public class pattern30
+{
+	public static void main(String args[]){
+		int n=4;
+		
+		for(int i=1;i<=n;i++){
+			int count=1;
+		char ch='D';
+			for(int j=1;j<=n;j++){
+				if(i%2==0){
+					System.out.print(count++ +" ");
+				}else System.out.print(ch-- + " ");
+			}System.out.println();
+		}
+	}
+}
+
+/*
+D C B A
+1 2 3 4
+D C B A
+1 2 3 4
+
+*/
