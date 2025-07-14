@@ -25,11 +25,9 @@
 
 
 * syntax to create array object :
-*] using [new] keyword :
+ - *] using [new] keyword :
 
- - Syntax: new Datatype[Size];
+ Syntax: new Datatype[Size];
 
  -ex. new int[5];
-  full syntax:
-  int[] arr = new int [5];
 
