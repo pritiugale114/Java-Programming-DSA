@@ -1,0 +1,21 @@
+
+//WAJPT for array palindrom
+import java.util.*;
+class arrayPalindrome
+{
+	public static void main(String args[]){
+	int[] arr={1,2,3,4,5};
+	int start=0;
+	int end=arr.length-1;
+
+	int count=0;
+	while(start<end){
+		if(arr[start]==arr[end]){
+			count++;
+		}else {break;}
+		start++;end--;
+	}
+	if(count==arr.length/2){
+		System.out.println("palindromw");
+	}else System.out.println("not palindrome");
+	}}

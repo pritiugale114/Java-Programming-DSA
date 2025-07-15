@@ -1,6 +1,6 @@
-//avarage of elements
+//WAJP to identify the average of odd elements in an array
 import java.util.*;
-class arr6
+class arr7
 {
 	public static void main(String args[]){
 		Scanner sc = new Scanner(System.in);
@@ -12,14 +12,13 @@ class arr6
 			arr[i]=sc.nextInt();
 		}
 		int sum=0;
-		float avg=0;
+		int count=0;
 		for(int i=0;i<arr.length;i++){
-		  sum+=arr[i];
+			if(arr[i]%2!=0){
+				sum+=arr[i];
+				count++;
+			}
 		}
-		avg=sum/arr.length;
-		System.out.println("average is :"+avg);
-
-
-
-	}
-}
+		int avg = sum/count;
+		System.out.println("average of oddd elements is :"+avg);
+	}}
