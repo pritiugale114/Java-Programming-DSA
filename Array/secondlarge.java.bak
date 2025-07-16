@@ -1,0 +1,26 @@
+//WJPT print second large element from array
+import java.util.*;
+class secondlarge
+{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+    System.out.println("enter the size of array");
+	int n=sc.nextInt();
+	System.out.println("enter the elements of array:");
+	int[] arr= new int[n];
+	for(int i=0;i<arr.length;i++){
+		arr[i]=sc.nextInt();
+	}
+	int large =arr[0];
+	int seclarge=Integer.MIN_VALUE;
+	for(int i=0;i<arr.length;i++){
+		if(large < arr[i]){
+			seclarge=large;
+			large=arr[i];
+		}else if(seclarge<arr[i] && large!=arr[i]){
+			seclarge=arr[i];
+		}
+		System.out.println("the first largest value is:"+large);
+		System.out.println("the sec largest value is:"+seclarge);
+	}
+	}}

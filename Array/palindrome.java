@@ -31,5 +31,5 @@ class palindrome
 	}
 	if(arr.length==count){
 		System.out.println("palindrome");
-	}else System.out.println("not palindrome");
+	}else System.out.println("not palindrome"); 
 	}}

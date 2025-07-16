@@ -1,0 +1,44 @@
+//WAJPT identify the highest sum of two elements from an array
+import java.util.*;
+class highestsumoftwo
+{ public static void main(String args[])
+	{
+	Scanner sc = new Scanner(System.in);
+	    System.out.println("enter the size of array");
+	int n=sc.nextInt();
+	System.out.println("enter the elements of array:");
+	int[] arr= new int[n];
+	for(int i=0;i<arr.length;i++){
+		arr[i]=sc.nextInt();
+	}
+	//first way
+	int sum=0;
+	for(int i=0;i<arr.length;i++){
+		for(int j=i+1;j<arr.length;j++){
+			if(sum<arr[i]+arr[j]){
+				sum=arr[i]+arr[j];
+			}
+		}
+	}System.out.println("highest sum of two elements is: "+sum);
+
+
+
+
+	/*
+	//second way 
+
+	int large =arr[0];
+	int seclarge=Integer.MIN_VALUE;
+	for(int i=0;i<arr.length;i++){
+		if(large < arr[i]){
+			seclarge=large;
+			large=arr[i];
+		}else if(seclarge<arr[i] && large!=arr[i]){
+			seclarge=arr[i];
+		}
+	}
+	System.out.println(" highest Sum of two elements :"+(large + seclarge));  */
+
+
+
+}}
